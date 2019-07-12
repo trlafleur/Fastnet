@@ -1,0 +1,71 @@
+
+using System;
+using System.Collections;
+using System.Windows.Forms;
+
+namespace BGSerialLib
+{
+	internal delegate void MethodCallInvoker (object[] o);
+
+	/// <summary>
+	/// Control.Invoke allows a method to be invoked on the same thread as the one
+	/// the control was created on.  Unlike in the full .NET Framework, the .NET
+	/// Compact Framework does not support the Control.Invoke overload for passing an 
+	/// array of objects to pass as arguments.  This ControlInvoker class overcomes
+	/// this limitation.
+	/// </summary>
+	internal class ControlInvoker
+	{
+		private class MethodCall 
+		{
+			public MethodCallInvoker invoker;
+			public object[] arguments;
+
+			public MethodCall (MethodCallInvoker invoker, object[] arguments) 
+			{
+				this.invoker = invoker;
+				this.arguments = arguments;
+			}
+		}
+
+		private Control control;
+		private Queue argumentInvokeList = new Queue ();
+
+		/// <summary>
+		/// The constructor typically takes a form
+		/// If not, this could be changed to an object.
+		/// </summary>
+		/// <param name="control">Control or Form that it should invoke</param>
+		public ControlInvoker (Control control) 
+		{
+			this.control = control;
+		}
+
+		/// <summary>
+		/// The delegate wrapping the method and its arguments 
+		/// to be called on the same thread as the control.
+		/// </summary>
+		/// <param name="invoker"></param>
+		/// <param name="arguments"></param>
+		internal void Invoke (MethodCallInvoker invoker, params object[] arguments) 
+		{
+			this.argumentInvokeList.Enqueue (new MethodCall (invoker, arguments));
+			try
+			{
+				control.Invoke(new EventHandler(ControlInvoke));
+			}
+			catch(System.Exception ex)
+			{
+				//For debugging:
+				string blah = ex.Message;
+			}
+		}
+
+		private void ControlInvoke (object sender, EventArgs e) 
+		{
+			MethodCall methodCall = (MethodCall) argumentInvokeList.Dequeue();
+			methodCall.invoker (methodCall.arguments);
+		}
+	}
+}
+

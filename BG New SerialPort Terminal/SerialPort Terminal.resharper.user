@@ -1,0 +1,78 @@
+<Configuration>
+  <CompletionStatisticsManager>
+    <ItemStatistics item="Qualified:@System.Diagnostics.Debug">
+      <Item value="WriteLine" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:System.Windows.Forms.ListBox.ObjectCollection">
+      <Item value="Remove" priority="0" />
+      <Item value="Add" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:@System.Diagnostics">
+      <Item value="Debug" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:System.Windows.Forms.ComboBox">
+      <Item value="Text" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:BGSerialLib.BGSerialPort.NewBGDataHandler">
+      <Item value="Target" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:System.Exception">
+      <Item value="Message" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:System.IO.Ports.SerialPort">
+      <Item value="IsOpen" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:System.Windows.Forms.TextBox">
+      <Item value="Text" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:System.Threading.Thread">
+      <Item value="Start" priority="0" />
+      <Item value="Name" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:BGSerialLib.BGSerialPort">
+      <Item value="WriteData" priority="0" />
+      <Item value="CtsStatus" priority="0" />
+      <Item value="NewBGData" priority="2" />
+      <Item value="FrameErrors" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:System.Windows.Forms.Control">
+      <Item value="InvokeRequired" priority="0" />
+      <Item value="BeginInvoke" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:System.Windows.Forms.Button">
+      <Item value="Enabled" priority="1" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:System.Windows.Forms.ListBox">
+      <Item value="SelectedIndex" priority="1" />
+      <Item value="GetSelected" priority="0" />
+      <Item value="Items" priority="2" />
+    </ItemStatistics>
+  </CompletionStatisticsManager>
+  <EditorManager>
+    <RecentFiles>
+      <File id="BBE71346-25BB-4D3D-B91E-EE027947F8D9/f:App.config" caret="547" visual-x="0" visual-y="0" />
+      <File id="BBE71346-25BB-4D3D-B91E-EE027947F8D9/f:Program.cs" caret="320" visual-x="0" visual-y="0" />
+      <File id="F1235E88-F226-4CAE-841B-AC6635929DFB/f:BGSerial.cs" caret="12212" visual-x="0" visual-y="5984" />
+      <File id="BBE71346-25BB-4D3D-B91E-EE027947F8D9/f:Terminal.cs" caret="27047" visual-x="0" visual-y="11050" />
+    </RecentFiles>
+  </EditorManager>
+  <FileStructureView>
+    <AutoScrollToSource>False</AutoScrollToSource>
+    <TrackCaretLocation>False</TrackCaretLocation>
+  </FileStructureView>
+  <NAntValidationSettings>
+    <NAntPath value="" />
+  </NAntValidationSettings>
+  <ReFormatCode>
+    <OptimizeUsings>False</OptimizeUsings>
+    <RemoveRedundantThis>False</RemoveRedundantThis>
+    <ShortenReferences>False</ShortenReferences>
+    <DecorateModifiers>False</DecorateModifiers>
+  </ReFormatCode>
+  <SharedSolutionDisabledTemplatesManager>
+    <DisabledTemplates />
+  </SharedSolutionDisabledTemplatesManager>
+  <UserSolutionDisabledTemplatesManager>
+    <DisabledTemplates />
+  </UserSolutionDisabledTemplatesManager>
+</Configuration>

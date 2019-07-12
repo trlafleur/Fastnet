@@ -1,0 +1,17 @@
+// Now, lets see if we have a full frame
+                    // If we have two SOF in a row its a special case, also a
+                    // minimum valid header size is 5 bytes, so we start scan at startBuffer+5
+                    int SOFindex = SearchBytes(sBuffer, sof, startBuffer + 5);
+
+                    if (SOFindex >= 0)  // yes, we have a full frame
+                    {
+                        // Copy frame to new buffer
+                        byte[] pBuffer = new byte[SOFindex - startBuffer];
+                        Array.Copy(sBuffer, startBuffer, pBuffer, 0, SOFindex - startBuffer);
+
+                        // Give it to the Parser
+                        parser(pBuffer);
+
+                        // Adjust sBuffer pointers
+                        startBuffer = SOFindex;
+                        frameCount++; // Force a re-scan, we may have more frames

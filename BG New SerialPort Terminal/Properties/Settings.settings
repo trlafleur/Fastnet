@@ -1,0 +1,45 @@
+﻿<?xml version='1.0' encoding='utf-8'?>
+<SettingsFile xmlns="http://schemas.microsoft.com/VisualStudio/2004/01/settings" CurrentProfile="(Default)" GeneratedClassNamespace="SerialPortTerminal.Properties" GeneratedClassName="Settings">
+  <Profiles />
+  <Settings>
+    <Setting Name="PortName" Type="System.String" Scope="User">
+      <Value Profile="(Default)">COM3</Value>
+    </Setting>
+    <Setting Name="BaudRate" Type="System.Int32" Scope="User">
+      <Value Profile="(Default)">28800</Value>
+    </Setting>
+    <Setting Name="DataBits" Type="System.Int32" Scope="User">
+      <Value Profile="(Default)">8</Value>
+    </Setting>
+    <Setting Name="Parity" Type="System.IO.Ports.Parity" Scope="User">
+      <Value Profile="(Default)">Odd</Value>
+    </Setting>
+    <Setting Name="DataMode" Type="SerialPortTerminal.DataMode" Scope="User">
+      <Value Profile="(Default)">Text</Value>
+    </Setting>
+    <Setting Name="StopBits" Type="System.IO.Ports.StopBits" Scope="User">
+      <Value Profile="(Default)">Two</Value>
+    </Setting>
+    <Setting Name="SendData" Type="System.String" Scope="User">
+      <Value Profile="(Default)" />
+    </Setting>
+    <Setting Name="SendAddr" Type="System.String" Scope="User">
+      <Value Profile="(Default)">60</Value>
+    </Setting>
+    <Setting Name="SendCmd" Type="System.String" Scope="User">
+      <Value Profile="(Default)">c9</Value>
+    </Setting>
+    <Setting Name="SendFrom" Type="System.String" Scope="User">
+      <Value Profile="(Default)">ff</Value>
+    </Setting>
+    <Setting Name="RxFilter1" Type="System.String" Scope="User">
+      <Value Profile="(Default)">ff</Value>
+    </Setting>
+    <Setting Name="RxFilter2" Type="System.String" Scope="User">
+      <Value Profile="(Default)">05</Value>
+    </Setting>
+    <Setting Name="RxFilter3" Type="System.String" Scope="User">
+      <Value Profile="(Default)">61</Value>
+    </Setting>
+  </Settings>
+</SettingsFile>

@@ -1,0 +1,37 @@
+////  <---------------------------- need some work here ---------------------------------------
+        ///// <summary> 
+        ///// Check the serial port for data. If data is available, data is read and parsed.
+        ///// This is a loop the keeps running until the port is closed.
+        ///// </summary>
+        //private void Read()
+        //{
+        //    int MilliSecondsWait = 10;
+        //    string strData = "";
+        //    this.Open();
+
+        //    while (com.IsOpen)
+        //    {
+        //        int nBytes = com.BytesToRead;
+        //        byte[] BufBytes;
+        //        BufBytes = new byte[nBytes];
+
+        //        com.Read(BufBytes, 0, nBytes);
+
+        //        strData += Encoding.GetEncoding("ASCII").GetString(BufBytes, 0, nBytes);
+
+        //        string temp = "";
+        //        while (strData != temp)
+        //        {
+        //            temp = strData;
+        //            strData = GetNmeaString(strData);
+        //        }
+
+        //        Thread.Sleep(MilliSecondsWait);
+
+        //        if (DateTime.Now.Ticks - TimeSinceLastEvent > 10000000 * _TimeOut && !HasTimedOut)
+        //        {
+        //            HasTimedOut = true;
+        //            FireEvent(GPSEventType.TimeOut, "");
+        //        }
+        //    }
+        //}

@@ -1,0 +1,95 @@
+private void setUpCommandTable()
+        {
+            string[,] cmdArray = new string[256, 5];
+
+            //string [,] cmdArray1 = new string [256,5];
+            // format:  [x,0] Command Number
+            //          [x,1] Name
+            //          [x,2] Short Name
+            //          [x,3] Number of bytes in command
+            //          [x,4] Format for data
+            //MultiDimensional array
+           string[,] cmdArray1 = new string [,] {
+                                 {"11","Rudder Angle","Rud Angle","4","000.0"}, 
+                                 {"28","Air Temperature Deg F","Air Temp F","4","000.0"},
+                                 {"29","Air Temperature Deg C","Air Temp C","4","000.0"},
+                                 {"30","Sea Temperature Deg F","Sea Temp F","4","000.0"},
+                                 {"31","Sea Temperature Deg C","Sea Temp C","4","000.0"},
+                                 {"39","Head / Lift Trend","H/L Trend","4","000.0"},
+                                 {"41","Off Course","Off Course","4","000.0"},
+                                 {"50","Tacking Performance","Tack Pref","4","000.0"},
+                                 {"51","Reaching Performance","Reach Pref","4","000.0"},
+                                 {"52","Heel Angle","Heel Angle","4","000.0"},
+                                 {"53","Optimum Wind Angle","Opt Wind Angle","4","000.0"},
+                                 {"54","Depth Rx Gain","Depth Rx Gain","4","000.0"},
+                                 {"55","Depth Noise","Depth Noise","4","000.0"},
+                                 {"56","Linear 1","Linear 1","4","000.0"},
+                                 {"57","Linear 2","Linear 2","4","000.0"},
+                                 {"58","Linear 3","Linear 3","4","000.0"},
+                                 {"59","Linear 4","Linear 4","4","000.0"},
+                                 {"65","Boat Speed","Speed","4","000.0"},
+                                 {"66","Boat Speed Raw","Speed Raw","4","000.0"},
+                                 {"73","Heading","Heading","4","000.0"},
+                                 {"74","Heading Raw","Heading Raw","4","000.0"},
+                                 {"77","App Wind Speed K","App Wind K","4","000.0"},
+                                 {"78","App Wind Speed Raw","App Wind Raw","4","000.0"},
+                                 {"79","App Wind Speed M/S","App Wind M/S","4","000.0"},
+                                 {"81","App Wind Angle","App Wind Angle","4","000.0"},
+                                 {"82","App Wind Angle Raw","App Wind Angle Raw","4","000.0"},
+                                 {"85","True Wind Speed K","T Wind K","4","000.0"},
+                                 {"86","True Wind Speed Raw","T Wind Raw","4","000.0"},
+                                 {"89","True Wind Angle","True Wind Angle","4","000.0"},
+                                 {"100","Average Speed","Avd Speed","4","000.0"},
+                                 {"105","Course","Course","4","000.0"},
+                                 {"109","True Wind Direction","T Wind Dir","4","000.0"},
+                                 {"111","Next Leg App Wind Angle","Next Leg App Wind Angle","4","000.0"},
+                                 {"113","Next Leg App Wind Speed","Next Leg App Wind Speed","4","000.0"},
+                                 {"117","Timer","Timer","4","000.0"},
+                                 {"125","Target Boat Speed","Target Boat Speed","4","000.0"},
+                                 {"127","Velocity Made Good","VMG","4","000.0"},
+                                 {"129","Dead Reckoning Distance","DR Dist","4","000.0"},
+                                 {"130","Leeway","Leeway","4","000.0"},
+                                 {"131","Tidal Drift","Tidal Drift","4","000.0"},
+                                 {"132","Tidal Set","Tidal Set","4","000.0"},
+                                 {"134","Barometric Pressure Trend","Baro Pres Trend","4","000.0"},
+                                 {"135","Barometric Pressure","Baro Pres","4","000.0"},
+                                 {"141","Battery Volts","Bat Volts","4","000.0"},
+                                 {"154","Heading on Next Track","Head Next","4","000.0"},
+                                 {"155","Fore/Aft Trim","F/A Trim","4","000.0"},
+                                 {"156","Mast Angle","Mast Angle","4","000.0"},
+                                 {"157","Wind Angle to the Mast","WA to Mast","4","000.0"},
+                                 {"193","Depth Meters","Depth M","4","000.0"},
+                                 {"194","Depth Feet","Depth Ft","4","000.0"},
+                                 {"195","Depth Fathomas","Depth Fat","4","000.0"},
+                                 {"205","Stored Log","Stored Log","4","000.0"},
+                                 {"207","Trip Log","Trip Log","4","000.0"},
+                                 {"211","Dead Reckoning Course","DR Course","4","000.0"},
+                                 {"224","Bearing Wpt to Wpt True","","4","000.0"},
+                                 {"225","Bearing Wpt to Wpt Mag","","4","000.0"},
+                                 {"227","Bearing to Wpt Rhumb True","","4","000.0"},
+                                 {"228","Bearing to Wpt Rhumb Mag","","4","000.0"},
+                                 {"229","Bearing to Wpt GC True","","4","000.0"},
+                                 {"230","Bearing to Wpt GC Mag","","4","000.0"},
+                                 {"231","Distance to Wpt Rhumb","","4","000.0"},
+                                 {"232","Distance to Wpt GC","","4","000.0"},
+                                 {"233","Course Over Ground True","COG T","4","000.0"},
+                                 {"234","Course Over Ground Mag","COG M","4","000.0"},
+                                 {"235","Speed Over Groung","SOG","4","000.0"},
+                                 {"236","Velocity Made Good Course","VMG Course","4","000.0"},
+                                 {"237","Time to Wpt","","4","000.0"},
+                                 {"238","Cross Track Error","CTE","4","000.0"},
+                                 {"239","Remote 0","","4","000.0"},
+                                 {"240","Remote 1","","4","000.0"},
+                                 {"241","Remote 2","","4","000.0"},
+                                 {"242","Remote 3","","4","000.0"},
+                                 {"243","Remote 4","","4","000.0"},
+                                 {"244","Remote 5","","4","000.0"},
+                                 {"245","Remote 6","","4","000.0"},
+                                 {"246","Remote 7","","4","000.0"},
+                                 {"247","Remote 8","","4","000.0"},
+                                 {"248","Remote 9","","4","000.0"}
+
+                                };
+
+        }
+        #endregion
