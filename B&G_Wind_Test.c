@@ -1,3 +1,9 @@
+
+
+// Converts B&G 213 MHU to degrees...
+// The MHU uses a 3-phase synchro, so we have three values that are 120 degrees apart
+// B&G unit runs on 6.5vdc, so we need to scale to 3.3v with a 2/1 divider
+// We will see a slight error as we sample ATD in sequence, but, it's just not a real issue
 /*
       CHANGE LOG:
 
@@ -15,11 +21,6 @@
 // https://www.hisse-et-oh.com/store/medias/sailing/5dd/2c3/af3/original/5dd2c3af39819f3668e93b13.pdf
 // https://electronics.stackexchange.com/questions/160215/how-to-get-the-angle-from-a-3-phases-synchro-signal
 // https://bikerglen.com/blog/building-a-synchro-to-digital-converter/
-
-// Converts B&G 213 MHU to degrees...
-// The MHU uses a 3-phase synchro, so we have three values that are 120 degrees apart
-// B&G unit runs on 6.5vdc, so we need to scale to 3.3v with a 2/1 divider
-// We will see a slight error as we sample ATD in sequence, but, it's just not a real issue
 
 #include <stdio.h>
 #include <stdlib.h>
