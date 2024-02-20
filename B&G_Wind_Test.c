@@ -31,7 +31,7 @@ void getAngle( float  x , float  y, float z)
      deg_angle = (rad_angle * (180.0/3.14159265));            // 180.0/3.14159265 = 57.29577958
      deg_angle = (deg_angle + 270.0);
      if (deg_angle >= 360) deg_angle = deg_angle - 360;
-     int_angle = (int) (round (deg_angle)) % 360;
+     int_angle = (int) round (deg_angle);
      
      printf("Angle in degree   = %8.2f , %d \n", deg_angle, int_angle);
 } 
