@@ -8,6 +8,8 @@
       
 
       Notes:  1)  Tested with https://www.onlinegdb.com/online_c_compiler
+              2)  Function tested with ESP32 with external ATD converter
+              3)  Tested with SAMD21G18 on Arduino
 */
 
 // https://www.hisse-et-oh.com/store/medias/sailing/5dd/2c3/af3/original/5dd2c3af39819f3668e93b13.pdf
