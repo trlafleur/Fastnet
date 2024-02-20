@@ -8,7 +8,7 @@
       
 
       Notes:  1)  Tested with https://www.onlinegdb.com/online_c_compiler
-/*
+*/
 
 // https://www.hisse-et-oh.com/store/medias/sailing/5dd/2c3/af3/original/5dd2c3af39819f3668e93b13.pdf
 // https://electronics.stackexchange.com/questions/160215/how-to-get-the-angle-from-a-3-phases-synchro-signal
