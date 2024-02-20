@@ -1,11 +1,21 @@
+/*
+      CHANGE LOG:
 
+      DATE         REV  DESCRIPTION
+      -----------  ---  ----------------------------------------------------------
+      07-Jun-2012  1.0  TRL - First Build    
+      19-Feb-2024  2.0  TRL - Code clean up, update algorithm, added references
+      
+
+      Notes:  1)  Tested with https://www.onlinegdb.com/online_c_compiler
+/*
 
 // https://www.hisse-et-oh.com/store/medias/sailing/5dd/2c3/af3/original/5dd2c3af39819f3668e93b13.pdf
 // https://electronics.stackexchange.com/questions/160215/how-to-get-the-angle-from-a-3-phases-synchro-signal
 // https://bikerglen.com/blog/building-a-synchro-to-digital-converter/
 
 // Converts B&G 213 MHU to degrees...
-// The MHU uses a 3 phase synchro, so we have three values that are 120 deg apart
+// The MHU uses a 3-phase synchro, so we have three values that are 120 degrees apart
 // B&G unit runs on 6.5vdc, so we need to scale to 3.3v with a 2/1 divider
 // We will see a slight error as we sample ATD in sequence, but, it's just not a real issue
 
@@ -16,7 +26,7 @@
 // ************************************************ //
 // 213 B&G x = Red, y = Green, z = Blue
 // B&G MHU is offset by 270 deg
-void getAngle( float  x , float  y, float z)
+void getAngle( float  x, float  y, float z)
 {
      float  rad_angle = 0.0;
      float  angle = 0.0;
