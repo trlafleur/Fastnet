@@ -32,7 +32,6 @@
 void getAngle( float  x, float  y, float z)
 {
      float  rad_angle = 0.0;
-     float  angle = 0.0;
      float  deg_angle = 0.0;
      int    int_angle = 0;
      float  M_Sin = 0.0;
