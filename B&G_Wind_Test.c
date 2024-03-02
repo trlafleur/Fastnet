@@ -39,12 +39,12 @@ void getAngle( float  x, float  y, float z)
 
     // Compute a Scott Transform
      M_Sin = (z-x);
-     M_Cos = (y - ( (x+z) / 2)) * ( 2 / sqrt(3) );            // 2 / sqrt(3) =  1.15470054       
-     rad_angle = atan2 (M_Cos, M_Sin);
-     deg_angle = (rad_angle * (180.0/3.14159265));            // 180.0/3.14159265 = 57.29577958
-     deg_angle = (deg_angle + 270.0);
-     if (deg_angle >= 360) deg_angle = deg_angle - 360;
-     int_angle = (int) round (deg_angle) % 360;
+     M_Cos = (y - ( (x+z) / 2)) * ( 2 / sqrt(3) );            // (2 / sqrt(3)) =  1.15470054       
+     rad_angle = atan2 (M_Cos, M_Sin);                        // get angle
+     deg_angle = (rad_angle * (180.0 / 3.14159265));            // (180.0 / 3.14159265) = 57.29577958
+     deg_angle = (deg_angle + 270.0);                         // B&G Offset
+     if (deg_angle >= 360) deg_angle = deg_angle - 360;       // check for max
+     int_angle = (int) round (deg_angle) % 360;               // convert to int
      
      printf("Angle in degree   = %8.2f , %d \n", deg_angle, int_angle);
 } 
