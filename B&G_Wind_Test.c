@@ -37,6 +37,7 @@ void getAngle( float  x, float  y, float z)
      float  M_Sin = 0.0;
      float  M_Cos = 0.0;
 
+    // Compute a Scott Transform
      M_Sin = (z-x);
      M_Cos = (y - ( (x+z) / 2)) * ( 2 / sqrt(3) );            // 2 / sqrt(3) =  1.15470054       
      rad_angle = atan2 (M_Cos, M_Sin);
