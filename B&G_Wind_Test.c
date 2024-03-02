@@ -11,6 +11,7 @@
       -----------  ---  ----------------------------------------------------------
       07-Jun-2012  1.0  TRL - First Build    
       19-Feb-2024  2.0  TRL - Code clean up, update algorithm, added references
+      02-Mar-2024  2.0a TRL - added comments, removed un-needed variable
       
 
       Notes:  1)  Tested with https://www.onlinegdb.com/online_c_compiler
@@ -41,9 +42,9 @@ void getAngle( float  x, float  y, float z)
      M_Sin = (z-x);
      M_Cos = (y - ( (x+z) / 2)) * ( 2 / sqrt(3) );            // (2 / sqrt(3)) =  1.15470054       
      rad_angle = atan2 (M_Cos, M_Sin);                        // get angle
-     deg_angle = (rad_angle * (180.0 / 3.14159265));            // (180.0 / 3.14159265) = 57.29577958
+     deg_angle = (rad_angle * (180.0 / 3.14159265));          // (180.0 / 3.14159265) = 57.29577958
      deg_angle = (deg_angle + 270.0);                         // B&G Offset
-     if (deg_angle >= 360) deg_angle = deg_angle - 360;       // check for max
+     if (deg_angle >= 360) deg_angle = deg_angle - 360;       // check for max angle
      int_angle = (int) round (deg_angle) % 360;               // convert to int
      
      printf("Angle in degree   = %8.2f , %d \n", deg_angle, int_angle);
